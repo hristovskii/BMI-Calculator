@@ -1,105 +1,117 @@
 * {
-    background-color: #282c34;
-    color: white;
-    margin: 0;
-    padding: 0;
+  background-color: #282c34;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    text-align: center;
-    margin-top: 100px;
+  text-align: center;
+  margin-top: 100px;
 }
 
 #text {
-    margin-bottom: 100px;
-    text-indent: 2rem;
+  margin-bottom: 100px;
+  text-indent: 2rem;
+  font-size: 2rem;
 }
 
 #text p {
-    padding: 2rem 10rem 0rem 10rem;
-    text-align: justify;
-    font-size: 18px;
+  padding: 2rem 10rem 0rem 10rem;
+  text-align: justify;
+  font-size: 1.4rem;
 }
 
 #cards {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 #first {
-    border: 5px solid blue;
-    border-radius: 1rem;
-    height: 15rem;
-    width: 25rem;
-    margin: auto;
-    font-size: 1.5rem;
+  border: 5px solid blue;
+  border-radius: 1rem;
+  height: 20rem;
+  width: 30rem;
+  margin: auto;
+  font-size: 200%;
 }
 
 #first #title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 1rem auto 1rem auto;
-    border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem auto 1rem auto;
+  border-radius: 1rem;
 }
 
-label{
-    display: inline-block;
-    float: left;
-    width: 200px;
-    margin: auto;
+label {
+  float: left;
+  width: 200px;
+  margin-left: 5rem;
 }
 
 input {
-    display: inline-block;
-    float: left;
-    margin-left: -1rem;
-    margin-right: -5rem;
+  float: left;
+  margin-left: -0.7rem;
+  margin-right: -5rem;
+}
+
+#height,
+#weight {
+  margin-top: 0.55rem;
 }
 
 #second {
-    border: 5px solid blue;
-    border-radius: 1rem;
-    height: 15rem;
-    width: 25rem;
-    margin: auto;
-    font-size: 1.5rem;
-    align-items: center;
+  border: 5px solid blue;
+  border-radius: 1rem;
+  height: 20rem;
+  width: 30rem;
+  margin: auto;
+  font-size: 200%;
+  align-items: center;
 }
 
 #second #title2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 1rem auto 1rem auto;
-    border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem auto 1rem auto;
+  border-radius: 1rem;
 }
 
 #second li {
-    list-style-type: none;
-    max-width: 85%;
-    margin: auto auto 0.8rem auto;
-    border-radius: 1rem;
+  list-style-type: none;
+  max-width: 85%;
+  margin: auto auto 0.8rem auto;
+  border-radius: 1rem;
 }
 
 input {
-    font-size: 1rem;
-    text-align: center;
-    width: 4.5rem;
-    height: 1.2rem;
-    background-color: white;
-    color: black;
-    border-radius: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  width: 4.5rem;
+  height: 1.2rem;
+  background-color: white;
+  color: black;
+  border-radius: 1rem;
 }
 
 #btn {
-    width: 8.5rem;
-    font-size: 1.4rem;
-    border-radius: 1rem;
-    margin-top: 1rem;
-    padding: 0.2rem;
+  width: 8.5rem;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  transition: 0.5s ease;
+}
+
+#btn:hover {
+  background-color: #61dafb;
+  color: black;
+  cursor: pointer;
+  transition: 0.5s ease;
 }
 
 #numbers {
-    margin-top: 1rem;
+  margin-top: 1.4rem;
 }

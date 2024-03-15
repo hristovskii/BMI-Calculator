@@ -1,65 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
+    <div id="text">
+      <h1>BMI Calculator</h1>
+      <p>
+        BMI is a measurement of a person's leanness or corpulence based on their
+        height and weight, and is intended to quantify tissue mass. It is widely
+        used as a general indicator of whether a person has a healthy body
+        weight for their height. Specifically, the value obtained from the
+        calculation of BMI is used to categorize whether a person is
+        underweight, normal weight, overweight, or obese depending on what range
+        the value falls between. These ranges of BMI vary based on factors such
+        as region and age, and are sometimes further divided into subcategories
+        such as severely underweight or very severely obese. Being overweight or
+        underweight can have significant health effects, so while BMI is an
+        imperfect measure of healthy body weight, it is a useful indicator of
+        whether any additional testing or action is required. Refer to the table
+        below to see the different categories based on BMI that are used by the
+        calculator.
+      </p>
+    </div>
 
-<div id="text">
-    <h1>BMI Calculator</h1>
-    <p>BMI is a measurement of a person's leanness or corpulence based on their height and weight,
-        and is intended to quantify tissue mass.
-        It is widely used as a general indicator of whether a person has
-        a healthy body weight for their height. Specifically,
-        the value obtained from the calculation of BMI is used to
-        categorize whether a person is underweight, normal weight, overweight,
-        or obese depending on what range the value falls between.
-        These ranges of BMI vary based on factors such as region and age,
-        and are sometimes further divided into subcategories such as severely
-        underweight or very severely obese. Being overweight or underweight can have
-        significant health effects, so while BMI is an imperfect measure of healthy body weight,
-        it is a useful indicator of whether any additional testing or action is required.
-        Refer to the table below to see the different categories based on BMI that are used by
-        the calculator.</p>
-</div>
-<div id="cards">
-    <div id="first">
+    <div id="cards">
+      <div id="first">
         <div id="title">
-            <h2>Calculate your BMI</h2>
+          <h2>Calculate your BMI</h2>
         </div>
-        <div>
-            <label>Add height: </label><input id="height" type="text" placeholder="ex. 185"/> <span>cm</span>
+        <div class="height">
+          <label>Add height: </label>
+          <input id="height" type="text" placeholder="ex. 185" />
+          <span>cm</span>
         </div>
-        <div>
-            <label>Add weight: </label><input id="weight" type="text" placeholder="ex. 86"/> <span>kg</span>
+        <div class="weight">
+          <label>Add weight: </label>
+          <input id="weight" type="text" placeholder="ex. 86" />
+          <span>kg</span>
         </div>
 
         <div id="calculate">
-            <button id="btn" onclick="send();">Calculate</button>
+          <button id="btn" onclick="send();">Calculate</button>
         </div>
 
-        <div id="numbers">
-            <span>Your BMI: </span><span id="bmi">0</span>
-        </div>
+        <div id="numbers"><span>Your BMI: </span><span id="bmi">0</span></div>
+      </div>
 
-    </div>
-    <div id="second">
+      <div id="second">
         <div id="title2">
-            <h2>BMI Categories:</h2>
+          <h2>BMI Categories:</h2>
         </div>
         <ul id="list">
-            <li id="underweight">Underweight = <18.5</li>
-            <li id="normal_weight">Normal weight = 18.5–24.9</li>
-            <li id="overweight">Overweight = 25–29.9</li>
-            <li id="obesity">Obesity = BMI of 30 or greater</li>
+            <li id="underweight">Underweight = < 18.5</li>
+          <li id="normal_weight">Normal weight = 18.5 - 24.9</li>
+          <li id="overweight">Overweight = 25 - 29.9</li>
+          <li id="obesity">Obesity = BMI of 30 or greater</li>
         </ul>
+      </div>
     </div>
-</div>
-<div style="margin-top: 8rem;">Petar Hristovski 2024</div>
-
-</body>
+  </body>
 </html>

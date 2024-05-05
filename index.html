@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI Calculator</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
   <body>
-    <div id="text">
+    <div id="text" class="home-content">
       <h1>BMI Calculator</h1>
       <p>
         BMI is a measurement of a person's leanness or corpulence based on their
@@ -29,7 +28,7 @@
     </div>
 
     <div id="cards">
-      <div id="first">
+      <div id="first" class="left">
         <div id="title">
           <h2>Calculate your BMI</h2>
         </div>
@@ -51,7 +50,7 @@
         <div id="numbers"><span>Your BMI: </span><span id="bmi">0</span></div>
       </div>
 
-      <div id="second">
+      <div id="second" class="right">
         <div id="title2">
           <h2>BMI Categories:</h2>
         </div>
@@ -64,7 +63,24 @@
       </div>
     </div>
 
-    <div style="margin-top: 6rem; font-size: 2xrem;">Scroll down for image</div>
-    <img src="bmi.jpg" alt="" >
+    <div class="bottom" style="margin-top: 6rem; font-size: 2xrem;">Scroll down for image</div>
+    <img class="bottom" src="bmi.jpg" alt="" >
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+          ScrollReveal({ 
+            // reset: true,
+            distance: '80px',
+            duration: 2000,
+            delay: 200
+          });
+
+          ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+          ScrollReveal().reveal('.left', { origin: 'left' });
+          ScrollReveal().reveal('.right', { origin: 'right' });
+          ScrollReveal().reveal('.bottom', { origin: 'bottom' });
+    </script>
   </body>
 </html>
